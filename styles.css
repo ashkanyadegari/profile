@@ -1,6 +1,7 @@
 body {
   font-family: 'Open Sans', sans-serif;
   font-weight: 300; /* if you want the light version */
+  text-align: center;
 }
 
 @media (max-width: 720px) {
@@ -13,7 +14,7 @@ body {
 @media (max-width: 540px) {
   /* For a screen < 540px, this CSS will be read */
   .container {
-    width: 300px;
+    width: 480px;
     margin: 0 auto;
   }
 }
@@ -56,7 +57,7 @@ img {
 .card-section {
   text-align: center;
   margin-bottom: 20px;
-  padding: 15px 40px;
+  padding: 15px 20px;
 }
 
 .btn-hero {
@@ -87,7 +88,7 @@ ul {
 .article-card {
   margin-bottom: 35px;
   max-width: 100%;
-  padding: 15px 30px;
+  padding: 15px 20px;
   text-align: center;
 }
 
