@@ -5,14 +5,24 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="css/styles.css">
   <title>My Profile</title>
 </head>
 <body>
+  <div class="navbar">
+    <div class="navbar-logo">
+      <img class="img-small" src="https://source.unsplash.com/random/80x80" alt="my-profile-image">
+      <h3>Coding, Thinking & Drinking!</h3>
+    </div>
+    <div class="navbar-links">
+      <a href="#me">Me</a>
+      <a href="#blog">Blog</a>
+      <a href="#">Contact</a>
+    </div>
+  </div>
 
   <div class="container">
-    <div class="card-section">
-      <img class="img-round" src="https://source.unsplash.com/random/400x400" alt="my-profile-image">
+    <div id="me" class="card-section">
       <h1>ASHKAN YADEGARI</h1>
       <h4>FULL STACK DEVELOPER - SHANGHAI</h3>
       <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque fuga, doloribus eveniet enim reiciendis ea dolor dicta blanditiis. Vero sunt laudantium quos dolorum, harum reprehenderit, unde, quas consequuntur deserunt consectetur officia nobis facere nisi amet officiis dolorem fuga quidem vitae dolor iusto! Accusantium odit culpa animi totam ipsum, delectus autem!</p>
@@ -26,22 +36,32 @@
     </div>
 
     <div class="card-section">
-      <h2>@posts = Article.all</h2>
+      <h2 id="blog">@posts = Article.all</h2>
+    </div>
+    <div class="categories">
+      <a class="btn-category btn-category-active" href="#">All</a>
+      <a class="btn-category" href="#">Bootcamp</a>
+      <a class="btn-category" href="#">Coding</a>
+      <a class="btn-category" href="#">Thoughts</a>
     </div>
     <div class="article-card">
-      <p class="author"><em>2020-10-29</em></p>
-      <img class="banner" src="https://source.unsplash.com/random/800x300" alt="">
-      <h2 class="title">#BOOTCAMP DAY 2</h2>
-      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.
+      <img class="article-banner" src="https://source.unsplash.com/random/800x300" alt="">
+      <div class="article-card-info">
+      <h2 class="article-title">#BOOTCAMP DAY 2</h2>
+      <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.
       Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.</p>
+      <p class="date">2020-10-29</p>
+      </div>
     </div>
 
     <div class="article-card">
-      <p class="author"><em>2020-10-29</em></p>
-      <img class="banner" src="https://source.unsplash.com/random/800x300" alt="">
-      <h2 class="title">#BOOTCAMP DAY 1</h2>
-      <p class="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.
+      <img class="article-banner" src="https://source.unsplash.com/random/800x300" alt="">
+      <div class="article-card-info">
+      <h2 class="article-title">#BOOTCAMP DAY 2</h2>
+      <p class="article-description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.
       Qui accusantium fuga libero, tempora. Inventore sit totam fugiat? Illo, quasi, harum.</p>
+      <p class="date">2020-10-29</p>
+      </div>
     </div>
 
   </div>
